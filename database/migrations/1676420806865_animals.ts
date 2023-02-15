@@ -10,7 +10,7 @@ export default class Animals extends BaseSchema {
       table.integer('species').notNullable()
       table.integer('breed').notNullable()
       table.integer('gender').notNullable()
-      table.integer('age').notNullable()
+      table.integer('age').notNullable().unsigned()
       table.timestamps(false)
     })
   }
